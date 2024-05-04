@@ -81,13 +81,13 @@ if submit:
         if test_result[0] == 0:
             col1,col2,col3 = st.columns([0.33,0.30,0.35])
             with col2:
-                st.success('DNA Result: Negative')
+                st.success('DNA Result: Animal')
             st.balloons()
 
         else:
             col1,col2,col3 = st.columns([0.215,0.57,0.215])
             with col2:
-                st.error('DNA Result: Positive (Please Consult with Doctor)')
+                st.error('DNA Result: Human')
 
     except:
         st.warning('Please fill the all required informations')
