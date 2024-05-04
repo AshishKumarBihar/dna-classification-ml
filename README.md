@@ -35,15 +35,6 @@ pip install scikit-learn
 pip install streamlit
 ```
 
-**Usage**
-
-To use this project, follow these steps:
-
-1. Clone the repository: ```git clone https://github.com/gopiashokan/Diabetes-Prediction-using-Machine-Learning.git```
-2. Install the required packages: ```pip install -r requirements.txt```
-3. Run the Streamlit app: ```streamlit run app.py```
-4. Access the app in your browser at ```http://localhost:8501```
-
 
 **Features**
 
@@ -71,7 +62,7 @@ The predictive model has demonstrated exceptional performance, boasting an accur
 
 **Accessibility**
 
-- The Streamlit application is readily accessible through the following link: [https://gopiashokan-diabetes-prediction.streamlit.app/](https://gopiashokan-diabetes-prediction.streamlit.app/). 
+- The Streamlit application is readily accessible through the following link: https://dna-classification-ml.onrender.com/
 
 - Users can conveniently access the tool in their web browsers, making it easily available for healthcare professionals and individuals concerned about diabetes risk.
 
@@ -87,13 +78,7 @@ Contributions to this project are welcome! If you encounter any issues or have s
 This project is licensed under the MIT License. Please review the LICENSE file for more details.
 
 
-**Contact**
-
-📧 Email: gopiashokankiot@gmail.com 
-
-🌐 LinkedIn: [linkedin.com/in/gopiashokan](https://www.linkedin.com/in/gopiashokan)
 
 For any further questions or inquiries, feel free to reach out. We are happy to assist you with any queries.
 
 
-![](https://github.com/gopiashokan/Diabetes-Prediction-using-Machine-Learning/blob/main/streamlit_application.JPG)
