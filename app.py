@@ -53,7 +53,7 @@ if submit:
         if test_result == 0:
             col1,col2,col3 = st.columns([0.33,0.30,0.35])
             with col2:
-                st.success(f'DNA Result: Animal with {test_percentage}* probability')
+                st.success(f'DNA Result: Animal with {test_percentage}% probability')
             # st.balloons()
 
         else:
