@@ -35,8 +35,8 @@ accuracy = metrics.accuracy_score(y_test,y_pred)
 
 
 
-st.set_page_config(page_title='Diabetes Prediction', page_icon=':dna:')
-st.markdown(f'<h1 style="text-align: center;">Diabetes Prediction</h1>', unsafe_allow_html=True)
+st.set_page_config(page_title='DNA Sequencing Prediction', page_icon=':dna:')
+st.markdown(f'<h1 style="text-align: center;">DNA Prediction</h1>', unsafe_allow_html=True)
 
 col1, col2 = st.columns(2, gap='large')
 
@@ -46,14 +46,14 @@ with col1:
 
     age = st.text_input(label='Age')
 
-    hypertension = st.selectbox(label='Hypertension', options=['No', 'Yes'])
+    hypertension = st.selectbox(label='Adenuine', options=['No', 'Yes'])
     hypertension_dict = {'No':0, 'Yes':1}
 
     heart_disease = st.selectbox(label='Heart Disease', options=['No', 'Yes'])
     heart_disease_dict = {'No':0, 'Yes':1}
 
 with col2:
-    smoking_history = st.selectbox(label='Smoking History', 
+    smoking_history = st.selectbox(label='DNA Abnormality History', 
                                    options=['Never', 'Current', 'Former', 'Ever', 'Not Current', 'No Info'])
     smoking_history_dict = {'Never':4.0, 'No Info':0.0, 'Current':1.0, 
                             'Former':3.0, 'Ever':2.0, 'Not Current':5.0}
@@ -81,13 +81,13 @@ if submit:
         if test_result[0] == 0:
             col1,col2,col3 = st.columns([0.33,0.30,0.35])
             with col2:
-                st.success('Diabetes Result: Negative')
+                st.success('DNA Result: Negative')
             st.balloons()
 
         else:
             col1,col2,col3 = st.columns([0.215,0.57,0.215])
             with col2:
-                st.error('Diabetes Result: Positive (Please Consult with Doctor)')
+                st.error('DNA Result: Positive (Please Consult with Doctor)')
 
     except:
         st.warning('Please fill the all required informations')
